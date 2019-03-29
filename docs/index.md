@@ -15,7 +15,7 @@ Use the Gatsby CLI to create a new site, specifying the pretty paper starter.
 
 ```sh
 # create a new Gatsby site using the Pretty Paper starter
-gatsby new my-docs https://github.com/gatsbyjs/gatsby-starter-blog
+gatsby new my-docs https://github.com/JulianFurchert/gatsby-starter-prettypaper
 
 # Start developing.
 cd my-docs/

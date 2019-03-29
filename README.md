@@ -6,7 +6,7 @@ Use the Gatsby CLI to create a new site, specifying the pretty paper starter.
 
 ```sh
 # create a new Gatsby site using the Pretty Paper starter
-gatsby new my-docs https://github.com/gatsbyjs/gatsby-starter-blog
+gatsby new my-docs https://github.com/JulianFurchert/gatsby-starter-prettypaper
 
 # Start developing.
 cd my-docs/
@@ -16,7 +16,7 @@ gatsby develop
 ```
 
 # Custom Blocks
-Custom Blocks are an extension of standard Markdown syntax. All Blocks are written as tagged Markdown code blocks. [see all Custom Block in action](https://prettypaper.netlify.com/Blocks/colors/)
+Custom Blocks are an extension of standard Markdown syntax. All Blocks are written as tagged Markdown code blocks. [see all Custom Block in action](https://pretty-paper.netlify.com/Blocks/colors/)
 
 ## Color
 The color block is useful to document a single color or color palettes like primaries or the main brand scheme.
@@ -188,5 +188,5 @@ src: ../_assets/img/image_medium.jpg | alt: eaxmple alt text
 ````
 
 # Author
-* Julian Furchert [E-Mail](https://twitter.com/fschultz_) / [Website](https://stinkstudios.com)
+Julian Furchert [E-Mail](https://twitter.com/fschultz_) / [Website](https://stinkstudios.com)
 
