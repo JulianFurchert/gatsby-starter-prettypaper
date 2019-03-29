@@ -1,0 +1,30 @@
+@import '../style.scss';
+
+.container{
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 4px;
+  background-color: $grey;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.textContainer {
+  border-right: 1px solid $text-black-lighten;
+  border-left: 1px solid $text-black-lighten;
+  flex-grow: 1;
+}
+
+.textContainer:last-child{
+  border-right: 0;
+  border-left: 0;
+
+}
+
+.text{
+  @include caption;
+  color: $text-black-lighten;
+  padding: 12px 24px;
+  width: 100%;
+  text-align: center;
+}

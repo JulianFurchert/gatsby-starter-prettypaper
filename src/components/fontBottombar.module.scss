@@ -1,0 +1,17 @@
+@import '../style.scss';
+
+.container{
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 4px;
+  background-color: $black;
+  overflow: hidden;
+}
+
+.group {
+  border-right: 1px solid $text-black-lighten;
+}
+
+.group:last-child{
+  border-right: 0;
+}

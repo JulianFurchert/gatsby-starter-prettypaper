@@ -1,0 +1,14 @@
+@import '../style.scss';
+
+.lottieContainer {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.lottie {
+  background-color: $grey;
+  border-radius: 4px;
+  line-height: 0;
+}
+

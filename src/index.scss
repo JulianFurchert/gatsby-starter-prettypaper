@@ -1,0 +1,29 @@
+@import './style.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  background-color: $grey;
+}
+
+.ReactModal__Body--open{
+  overflow: hidden!important;
+}
+
+a{
+  color: #202124;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+

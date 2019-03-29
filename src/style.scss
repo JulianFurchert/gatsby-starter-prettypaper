@@ -1,0 +1,118 @@
+// Colors
+
+$black: #121212;
+$black-lighten: #313131;
+
+$grey:#f7f7f7;
+$grey-darken: #D6D6D6;
+
+// $grey:#F1F1F1;
+// $grey-darken: #D3D3D3;
+
+$white: #FFFFFF;
+$white-darken: #F7F7F7;
+
+$text-black: #121212;
+$text-black-lighten: #555555;
+
+$text-white: #FFFFFF;
+$text-white-darken:#9E9E9E;
+
+
+// FontStyles
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+@mixin title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1;
+  margin: 0;
+}
+
+@mixin lead-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 40px;
+  margin: 0;
+  @media screen and (max-width: 786px) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@mixin headline-large {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0;
+}
+
+@mixin headline-small {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+}
+
+@mixin subtitles-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+}
+
+@mixin subtitles-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+}
+
+@mixin body-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  margin: 0;
+}
+
+@mixin caption {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+@mixin label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  color: $text-black-lighten;
+}
+
+@mixin value {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+@mixin button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}

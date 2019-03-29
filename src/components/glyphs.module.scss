@@ -1,0 +1,52 @@
+@import "../style";
+@import '../style.scss';
+
+.container{
+  margin: 32px 0;
+}
+
+.header{
+  @include value;
+  color: $text-black-lighten;
+  display: inline-block;
+  padding: 0 0 8px;
+}
+
+.characterContainer{
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.character{
+    padding: 16px;
+    font-size: 76px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    background-color: $grey;
+    user-select: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.letter{
+    @include value;
+    color: $text-black-lighten;
+    margin-left: 8px;
+}
+
+.code {
+    @include value;
+    color: $text-black-lighten;
+    margin-right: 8px;
+}

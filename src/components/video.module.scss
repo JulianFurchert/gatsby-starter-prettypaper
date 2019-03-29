@@ -1,0 +1,43 @@
+.container{
+  position: relative;
+  width: 100%;
+  margin: 8px 0;
+}
+
+
+.videoPlayer{
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.stopped::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0,0,0,.5) url(../assets/icons/playbutton.svg) no-repeat center center;
+  background-size: 72px;
+  pointer-events: none;
+  transition: background-size 235ms cubic-bezier(.4,0,.2,1),opacity 235ms cubic-bezier(.4,0,.2,1);
+}
+
+.isPlaying::after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0,0,0,.5) url(../assets/icons/pausebutton.svg) no-repeat center center;
+  background-size: 72px;
+  pointer-events: none;
+  transition: background-size 235ms cubic-bezier(.4,0,.2,1),opacity 235ms cubic-bezier(.4,0,.2,1);
+}
+
+.isPlaying:hover::after{
+  opacity: 1;
+}

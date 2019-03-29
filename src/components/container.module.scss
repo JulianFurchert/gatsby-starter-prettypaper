@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  margin: 32px 0;
+}
+
+.small {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.large {
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+}
+
+.container::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}

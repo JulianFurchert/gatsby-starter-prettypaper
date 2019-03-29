@@ -1,0 +1,63 @@
+@import '../style';
+
+.sidebar {
+  width: 270px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: calc(100vh);
+  transform: translateX(0);
+  transition:  transform .2s
+}
+
+.firstPage {
+  transform: translateX(135px);
+}
+
+@media only screen and (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+  .firstPage {
+    transform: translateX(100px);
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .sidebar {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 200px;
+  }
+  .firstPage {
+    transform: translateX(0);
+  }
+}
+
+.sidebarContent {
+  overflow-y: scroll;
+}
+
+.listItem{
+  padding: 8px 8px 8px 0;
+}
+
+.link{
+  margin:0;
+  @include subtitles-regular;
+  color: $text-black-lighten;
+}
+
+.linkActive{
+  @include subtitles-medium;
+  color: $text-black;
+}
+
+:global(.pageContentFixed){
+  position: fixed;
+  top: 0;
+  transform: translateY(1rem);
+  width: 340px;
+}
+
+

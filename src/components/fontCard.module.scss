@@ -1,0 +1,25 @@
+@import '../style';
+
+.fontCard{
+  background-color: $grey;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.header{
+  height: 122px;
+  width: 100%;
+  cursor: zoom-in;
+
+  font-size: 100px;
+  line-height: 1;
+  padding: 16px;
+  text-align: center;
+  user-select: none;
+}
+
+.body{
+  padding: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+}

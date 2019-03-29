@@ -1,0 +1,1 @@
+import './fonts.module.scss';

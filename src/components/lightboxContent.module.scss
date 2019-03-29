@@ -1,0 +1,41 @@
+.lightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: zoom-out;
+}
+
+:global(.lightbox-enter) {
+  top: 80px;
+  right: 80px;
+  bottom: 80px;
+  left: 80px;
+}
+
+:global(.lightbox-enter-active) {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 300ms ease-out;
+}
+
+:global(.lightbox-exit) {
+  opacity: 1;
+}
+
+:global(.lightbox-exit-active) {
+  opacity: 0;
+  transition: all 100ms ease-out;
+}
+
+.content{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}

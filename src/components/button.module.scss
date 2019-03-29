@@ -1,0 +1,45 @@
+@import '../style.scss';
+
+.button{
+  border: 0;
+  outline: 0;
+  background-color: $grey;
+  color: $text-black;
+  cursor: pointer;
+  padding: 0;
+}
+
+.button:hover{
+  background-color: $grey-darken;
+}
+
+.buttonBlack {
+  background-color: $black;
+  color: $text-white;
+}
+
+.buttonBlack:hover{
+  background-color: $black-lighten;
+}
+
+.link{
+  color: inherit;
+}
+
+.text {
+  @include button;
+  padding: 12px 24px;
+}
+
+.iconContainer{
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon{
+  width: 24px;
+  height: 24px;
+}

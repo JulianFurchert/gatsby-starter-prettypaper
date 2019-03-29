@@ -1,0 +1,43 @@
+@import '../style.scss';
+
+.sidebar {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  width: 256px;
+  z-index: 200;
+  background-color: $black;
+  opacity: 1;
+  color: white;
+  border-radius: 5px;
+}
+
+.bottombar {
+  z-index: 200;
+  position: fixed;
+  bottom: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+:global(.bar-enter) {
+  opacity: 0;
+  transform:  translateY(40px);
+}
+
+:global(.bar-enter-active) {
+  opacity: 1;
+  transform:  translateY(0);
+  transition: all 300ms ease-out 300ms;
+}
+
+:global(.bar-exit) {
+  opacity: 1;
+}
+
+:global(.bar-exit-active) {
+  opacity: 0;
+  transition: all 100ms ease-out;
+}

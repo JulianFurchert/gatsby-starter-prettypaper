@@ -1,0 +1,32 @@
+.appContainer{
+  position: relative;
+  padding: 48px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.app{
+  position: relative;
+  max-width: 1256px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+.main{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 1024px) {
+  .appContainer{
+    padding: 32px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .appContainer{
+    padding: 16px;
+  }
+}

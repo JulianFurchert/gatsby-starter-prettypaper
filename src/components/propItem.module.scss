@@ -1,0 +1,43 @@
+@import "../style";
+
+
+.propItemRow{
+  display: flex;
+  align-items: top;
+  padding: 12px 24px;
+}
+
+.label{
+  @include label;
+  color: $text-black-lighten;
+}
+
+.propItemRow .label{
+  min-width: 80px;
+}
+
+.value{
+  @include value;
+  color: $text-black;
+}
+
+.labelWhite{
+  color: $text-white-darken;
+}
+
+.valueWhite{
+  color: $text-white;
+}
+
+.valueHover:hover{
+  cursor: pointer;
+  background-color: $grey-darken;
+  padding: 0 4px;
+  margin: 0 -4px;
+  border-radius: 4px;
+}
+
+.valueHover.valueWhite:hover{
+  background-color: $black-lighten;
+}
+

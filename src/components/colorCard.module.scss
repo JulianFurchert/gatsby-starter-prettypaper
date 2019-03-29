@@ -1,0 +1,23 @@
+@import "../style";
+@import '../style.scss';
+
+.container{
+}
+
+.colorCard{
+  background-color: $grey;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.header{
+  height: 122px;
+  width: 100%;
+  cursor: zoom-in;
+}
+
+.body{
+  padding: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+}

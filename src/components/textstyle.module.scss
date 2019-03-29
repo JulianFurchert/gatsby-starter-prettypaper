@@ -1,0 +1,36 @@
+@import '../style';
+
+.container{
+  background-color: $grey;
+  width: 100%;
+  padding: 24px 16px;
+  border-radius: 4px;
+}
+
+.type{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.name{
+
+}
+
+.information{
+  min-width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listItem{
+  @include value;
+  color: $text-black-lighten;
+  display: inline-block;
+  margin-left: 24px;
+}
+
+.text{
+  margin-top: 8px;
+}

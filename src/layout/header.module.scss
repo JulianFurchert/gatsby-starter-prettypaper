@@ -1,0 +1,103 @@
+@import '../style';
+
+.header {
+  width: 100%;
+  max-width: 1400px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo{
+  @include headline-small;
+  margin-right: 32px;
+  transform: translateX(0);
+  transition:  transform .2s
+}
+
+.firstPage .logo{
+  transform: translateX(135px);
+}
+
+.nav{
+  transform: translateX(0);
+  transition:  transform .2s;
+  margin: 16px 0;
+}
+
+
+.firstPage .nav{
+  transform: translateX(-135px);
+}
+
+@media only screen and (max-width: 1024px) {
+  .firstPage .nav{
+    transform: translateX(-100px);
+  }
+  .firstPage .logo{
+    transform: translateX(100px);
+  }
+
+}
+
+@media only screen and (max-width: 786px) {
+  .firstPage .nav{
+    transform: translateX(0);
+  }
+  .firstPage .logo{
+    transform: translateX(0);
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+}
+
+
+.listItem{
+  position: relative;
+  display: inline;
+  padding-right: 24px;
+}
+
+.listItem:last-child{
+  padding-right: 0;
+}
+
+.link{
+  @include subtitles-medium;
+  color: $text-black;
+  margin:0;
+}
+
+.link::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 12px;
+  width: calc(100% - 24px);
+  height: 2px;
+  background-color: #121212;
+  opacity: 0;
+  transition: 200ms ease-in;
+}
+
+.linkActive::after{
+  top: 22px;
+  opacity: 1;
+}
+
+.listItem:last-child .link::after{
+  width: 100%;
+}
+
+.underline{
+  position: fixed;
+  top: 25px;
+  left: 0;
+  height: 2px;
+  min-width: 10px;
+  background-color: $black;
+}

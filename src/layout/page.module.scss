@@ -1,0 +1,73 @@
+@import "../style";
+
+.page {
+  width: 100%;
+  background-color: white;
+  transform: translateX(0);
+  transition:  transform .2s;
+  padding: 40px;
+  overflow-x: hidden;
+}
+
+.firstPage {
+  transform: translateX(-135px);
+}
+
+.pageContent{
+  max-width: 725px;
+  margin: 88px auto 56px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .firstPage {
+    transform: translateX(-100px);
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .navOpen {
+    transform: translateX(200px);
+  }
+  .firstPage {
+    transform: translateX(0);
+  }
+  .page {
+    padding: 24px 16px;
+  }
+  .pageContent{
+    margin: 32px auto;
+  }
+}
+
+
+.page :global(.title){
+  @include title;
+  margin: 0 0 24px;
+}
+
+.page :global(.lead){
+  @include lead-text;
+  margin: 0 0 96px;
+}
+
+.page :global(h1) {
+  @include headline-large;
+  margin: 96px 0 16px;
+}
+
+.page :global(h2),  :global(h3), :global(h4), :global(h5), :global(h6) {
+  @include headline-small;
+  margin: 40px 0 16px;
+}
+
+.page :global(p){
+  @include body-text;
+  margin: 0 0 16px;
+}
+
+.page :global(a){
+  @include body-text;
+  margin: 0 0 16px;
+  color: #00B694;
+}
